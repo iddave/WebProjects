@@ -8,13 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__container">
-            <ul class="menu">
+        <div class="burgir__container"  >
+            <div class="burgir" id="burgir" onclick="showMenu()">
+                <span class="item item-1"></span>
+                <span class="item item-2"></span>
+                <span class="item item-3"></span>
+            </div>
+        </div>
+        <div class="header__container" >
+            <ul class="menu" id="menu">
                 <li class="menu__item"><a href="#">Works</a></li>
                 <li class="menu__item"><a href="#">Blog</a></li>
                 <li class="menu__item"><a href="#">Contact</a></li>
@@ -39,7 +47,7 @@
                 <p class="recent__title">Recent posts</p>
                 <p class="view-all"><a href="#">View all</a></p>
             </div>
-            <div class="recent__posts">
+            <div class="recent__posts" hidden>
                 <div class="r_post">
                     <h2 class="post_title">Making a design system from scratch</h2>
                     <div class="post_info">
@@ -94,10 +102,11 @@
                     </div>
                 </div>
             </div>
-            <div class="arrows"><span data-about="left">
-                    <-</span> </div> <div class="arrows"><span data-about="right">-></span></div>
-            <script>
-            </script>
+            <div class="arrows">
+                <div class="arrow"><img data-about="left" src="img/леваяСтрелка.png" alt=""></div>
+                <div class="arrow"><img data-about="right" src="img/праваяСтрелка.png" alt=""></div>
+            </div>
+            <script src="superSlider.js"></script>
         </div>
     </section>
     <footer>
