@@ -58,6 +58,23 @@ $('.published-soon_slider').slick({
   ]
 });
 
+$('.news_slider').slick({
+  // centerMode: true,
+ //  centerPadding: '60px',
+  infinite: true,
+  prevArrow: $('.slick4-prev'),
+  nextArrow: $('.slick4-next'),
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
 function showCatalog() {
     if (topCatalog.style.display != "none") {
         topCatalog.style.display = "none";
